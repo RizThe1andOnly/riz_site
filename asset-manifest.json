@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/riz_site/static/css/main.5f361e03.chunk.css",
+    "main.js": "/riz_site/static/js/main.26fadbf1.chunk.js",
+    "main.js.map": "/riz_site/static/js/main.26fadbf1.chunk.js.map",
+    "runtime-main.js": "/riz_site/static/js/runtime-main.bc6279cc.js",
+    "runtime-main.js.map": "/riz_site/static/js/runtime-main.bc6279cc.js.map",
+    "static/js/2.061f098f.chunk.js": "/riz_site/static/js/2.061f098f.chunk.js",
+    "static/js/2.061f098f.chunk.js.map": "/riz_site/static/js/2.061f098f.chunk.js.map",
+    "index.html": "/riz_site/index.html",
+    "precache-manifest.086e050e5992017a24cd4499b387827b.js": "/riz_site/precache-manifest.086e050e5992017a24cd4499b387827b.js",
+    "service-worker.js": "/riz_site/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/riz_site/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.061f098f.chunk.js.LICENSE.txt": "/riz_site/static/js/2.061f098f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/riz_site/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc6279cc.js",
+    "static/js/2.061f098f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.26fadbf1.chunk.js"
+  ]
+}
