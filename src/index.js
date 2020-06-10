@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './SiteContentDirectories/Resources/CssFiles/index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './SiteContentDirectories/misc/serviceWorker';
+import setSlideDimensions from './SiteContentDirectories/Utilities/SetSlideDimensions';
+import whileScrolling from './SiteContentDirectories/Utilities/WhileScrolling';
+
+window.onresize = setSlideDimensions;
+window.onscroll = whileScrolling;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+	<button type="button" id="moveUpButton">Up</button>
+	<App/>
+	<button type="button" id="moveDownButton">Down</button>
   </React.StrictMode>,
   document.getElementById('root')
 );
