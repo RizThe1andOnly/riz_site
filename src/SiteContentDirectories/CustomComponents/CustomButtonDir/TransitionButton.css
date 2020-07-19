@@ -1,0 +1,26 @@
+:root{
+    --marginLeftValue: 0px;
+}
+
+.transitionButtonClass{
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    margin-left: var(--marginLeftValue);
+
+    position:-webkit-sticky;
+    position:sticky;
+}
+
+#Up{
+    top:0;
+    border-bottom: 20px solid rgb(0, 0, 0);
+}
+
+#Down{
+    bottom:0;
+    border-top: 20px solid rgb(0, 0, 0);
+}

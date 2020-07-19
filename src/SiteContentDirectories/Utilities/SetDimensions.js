@@ -1,7 +1,7 @@
 const DIV_HEIGTH_RATIO = 0.9;
 const DIV_WIDTH_RATIO = 0.85;
 
-function setSlideDimensions(){
+export function setSlideDimensions(){
     let divHeight = window.innerHeight * DIV_HEIGTH_RATIO;
     let divWidth = window.innerWidth * DIV_WIDTH_RATIO;
     let leftMarginVal = (window.innerWidth - divWidth) * 0.5;
@@ -14,4 +14,4 @@ function setSlideDimensions(){
     root.style.setProperty("--topMargin",topMargin+"px");
 }
 
-export default setSlideDimensions;
+

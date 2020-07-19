@@ -1,4 +1,4 @@
-import {inViewFilter} from './WhileScrolling';
+import {inViewFilter} from '../../Utilities/WhileScrolling';
 
 /**
  * Functions that will be the onEvent actions for the up and 
@@ -35,7 +35,10 @@ function getCurrentSlide(){
 */
 export function transitionUp(){
     let currentElement = getCurrentSlide();
-    let newPosition = (currentElement.previousElementSibling.offsetTop) - TOP_PADDING;
+    let newPosition = window.scrollY;
+    if((currentElement.previousElementSibling) != null){
+        newPosition = (currentElement.previousElementSibling.offsetTop) - TOP_PADDING;
+    }
     window.scrollTo(0,newPosition);
 }
 
@@ -45,7 +48,10 @@ export function transitionUp(){
 */
 export function transitionDown(){
     let currentElement = getCurrentSlide();
-    let newPosition = currentElement.nextElementSibling.offsetTop - TOP_PADDING;
+    let newPosition = window.scrollY;
+    if((currentElement.nextElementSibling)!=null){
+        newPosition = currentElement.nextElementSibling.offsetTop - TOP_PADDING;
+    }
     window.scrollTo(0,newPosition);
 }
 

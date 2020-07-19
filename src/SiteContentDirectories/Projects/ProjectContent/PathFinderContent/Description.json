@@ -1,0 +1,4 @@
+{
+    "PathFinderDescription" : "Employs Dijkstra's algorithm to go from one selected node to another, avoiding blocks when they exist.",
+    "PathFinderTitle": "Path Finder"
+}

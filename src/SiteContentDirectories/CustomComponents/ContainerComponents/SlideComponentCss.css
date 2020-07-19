@@ -9,7 +9,7 @@
 .slideComponent{
     scroll-snap-align: start;
     align-self: center;
-    background-color: rgb(34, 151, 253);
+    background-color: rgba(248, 248, 248, 0.5);
     height: var(--divHeight);
     width: var(--divWidth);
     margin-left: var(--leftMargin);
