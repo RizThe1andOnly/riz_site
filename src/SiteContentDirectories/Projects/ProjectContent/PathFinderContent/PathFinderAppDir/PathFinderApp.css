@@ -4,7 +4,7 @@
 }
 
 #buttonHolder{
-  width: 550px;
+  width: 500px;
 }
 
 .optionButton{
@@ -33,7 +33,7 @@
 }
 
 .controlButtonHolder{
-  width: 545px;
+  width: 500px;
   height: 30px;
 
   display: flex;
@@ -70,7 +70,7 @@
 }
 
 .pathFinderTitle{
-  width: 550px;
+  width: 500px;
   
   background-color: black;
   color: white;
