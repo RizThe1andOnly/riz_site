@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2b18cd9b0c0db2612a777681411ce7d",
+    "revision": "2e9c14de2facb26938a45a9b54e6ab07",
     "url": "/riz_site/index.html"
   },
   {
-    "revision": "d878d33bb3772d35efd3",
-    "url": "/riz_site/static/css/main.9ee59652.chunk.css"
+    "revision": "1550c1c9f2633d45f77a",
+    "url": "/riz_site/static/css/main.894433ce.chunk.css"
   },
   {
     "revision": "0dea8348cb936e1d6739",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/riz_site/static/js/2.1f158116.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d878d33bb3772d35efd3",
-    "url": "/riz_site/static/js/main.ddca8bf2.chunk.js"
+    "revision": "1550c1c9f2633d45f77a",
+    "url": "/riz_site/static/js/main.7e4f1ed3.chunk.js"
   },
   {
     "revision": "b1d09639c0040502ae71",
