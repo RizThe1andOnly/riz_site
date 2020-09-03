@@ -1,15 +1,14 @@
 import React,{Component} from 'react';
 import "./ProjectTabCss.css";
 import {Link} from 'react-router-dom'
+import {getTabContents} from '../ProjectContent/PCExporter';
 
-/**
- * @typedef {Object} PContent
- * @property {any} thumbnail
- * @property {any} description
- * @property {String} title
- * @property {String} link
- */
-
+/** @typedef {Object} TabContents 
+ *  @property {Text} title
+ *  @property {Text} tabDescription
+ *  @property {any} thumbnail
+ *  @property {any} link
+*/
 
 const MARGIN_TOP_CONSTANT = 2;
 
@@ -64,18 +63,19 @@ class ProjectTab extends Component{
             marginRight: this.state.marginRightVar
         };
         
-        /** @type {PContent} */
-        let inheritedPContent = this.props.projectContents;
+        //get the tab contents from the provided content id. the provided content id is in props.
+        /** @type TabContents */
+        let tabContent = getTabContents(this.props.contentId);
 
         return(
-            <Link to={inheritedPContent.link} className="tabLink">
+            <Link to={tabContent.link} className="tabLink">
                 <div className="projectTab" style={sizeStyleFactors}>
                     <div className="imgHolder">
-                        <img src={inheritedPContent.thumbnail} alt="Not Found" width="100%" height="100%"/>
+                        <img src={tabContent.thumbnail} alt="Not Found" width="100%" height="100%"/>
                     </div>
                     <div className="tabText">
-                        <div className="tabTitle">{inheritedPContent.title}</div>
-                        <div className="tabDesc">{inheritedPContent.description}</div>
+                        <div className="tabTitle">{tabContent.title}</div>
+                        <div className="tabDesc">{tabContent.tabDescription}</div>
                     </div>
                 </div>
             </Link>

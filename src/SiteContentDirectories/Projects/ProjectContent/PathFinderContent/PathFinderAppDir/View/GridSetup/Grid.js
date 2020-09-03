@@ -36,7 +36,7 @@ function Grid(props){
             };
             rowArray.push(<GridNode {...cprops}/>);
         }
-        gridMatrix.push(<div style={{display: "flex", width: gridWidth, height: gridHeight}}>{rowArray}</div>);
+        gridMatrix.push(<div style={{display: "flex", width: gridWidth, height: tileHeight}}>{rowArray}</div>);
     }
 
     return(

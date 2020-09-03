@@ -1,4 +1,5 @@
 {
-    "PathFinderDescription" : "Employs Dijkstra's algorithm to go from one selected node to another, avoiding blocks when they exist.",
-    "PathFinderTitle": "Path Finder"
+    "PathFinderDescription" : "Employs Dijkstra's algorithm to go from one selected node to another, avoiding blocks when they exist. This program is constructed using React JS and javascript. It is setup using a MVC model. The model currently consists of a Javascript implementaion of Dijkstra's algorithm. The view is constructed using React components. The model and view communicate with each other through events and callbacks linked to those events, these functionalities are abstracted and implemented in the control section of the code. To Use This Progam: (1)- Select Option for type of block from drop-down menu. There are several options for the type of block to be used. The options are as follows: 1:Start-sets the starting node, 2:End-sets the ending node, 3:Block: sets obstructions for path, 4: Un-Block: Clears a block type node. (2)- Upon selecting type of block click on desired block in grid to assign that block to type selected. Select at least a start and end block (only 1 of each), then if you would like add obstructions (called block's). (3)- Press Run and watch algorithm take effect.",
+    "PathFinderTitle": "Path Finder",
+    "PathFinderTabDescription" : "Employs Dijkstra's algorithm to go from one selected node to another, avoiding blocks when they exist."
 }

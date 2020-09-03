@@ -1,8 +1,14 @@
 import React,{Component} from 'react';
 import ProjectTab from './ProjectTab';
-import {ProjectContents} from '../ProjectContent/PCExporter';
 import {Switch,Route} from 'react-router-dom';
-import PathFinderApp from '../ProjectContent/PathFinderContent/PathFinderAppDir/PathFinderApp';
+import PresentationPage from '../ProjectPresentationPages/PresentationPage';
+import {ID_PATH_FINDER,ID_CONWAY_GOL} from '../ProjectContent/PCExporter'
+
+/**@typedef {Object} ParameterObject
+ * @property {Number} height
+ * @property {Number} width
+ * @property {Text} projectId
+*/
 
 class ProjectsList extends Component{
 
@@ -24,12 +30,12 @@ class ProjectsList extends Component{
                 <Switch>
                     <Route path="/riz_site/projects/PathFinder">
                         <div className="appHolder">
-                            <PathFinderApp/>
+                            <PresentationPage contentId={ID_PATH_FINDER}/>
                         </div>
                     </Route>
                     <Route path="/riz_site/projects">
-                        <ProjectTab refwidth={this.state.window_width} projectContents={ProjectContents.ConwayGOLContent}/>
-                        <ProjectTab refwidth={this.state.window_width} projectContents={ProjectContents.PathFinderContent}/>
+                        <ProjectTab refwidth={this.state.window_width} contentId={ID_PATH_FINDER}/>
+                        <ProjectTab refwidth={this.state.window_width} contentId={ID_CONWAY_GOL}/>
                     </Route>
                 </Switch>  
             </div>

@@ -81,19 +81,22 @@ class GridNode extends Component{
     // end of event handler section
 
     render(){
+        let nodeWidth = this.props.w - 1;
+        let nodeHeight = this.props.h - 1;
+
         let styleObj = {
-            width: this.props.w,
-            height: this.props.h,
+            width: nodeWidth,
+            height: nodeHeight,
             backgroundColor: this.state.color,
             border: "solid",
-            borderWidth: 'thin',
+            borderWidth: '1px',
             borderColor: 'black',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center'
         };
 
-        let innerDotDim = (this.props.h + this.props.w) * INNERDOT_SCALING_FACTOR;
+        let innerDotDim = (nodeWidth + nodeHeight) * INNERDOT_SCALING_FACTOR;
         let innerStyleObj = {
             width: innerDotDim,
             height: innerDotDim,
@@ -102,6 +105,7 @@ class GridNode extends Component{
         }
 
         let nodeId = this.props.iCoordinate + "-" + this.props.jCoordinate;
+        
         return(
             <div id={nodeId} style={styleObj} onClick={this.setTypeofNode} ref={this.selfRef}>
                 <div style={innerStyleObj}></div>

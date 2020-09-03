@@ -58,7 +58,9 @@ class PathFinderApp extends Component {
       startNode:null,
       endNode:null,
       blockButtonSelected:false,
-      commandButtonColor: 'black'
+      commandButtonColor: 'black',
+      height_vars : this.setSubComponentHeights(this.props.height_var),
+      width_var : this.props.width_var
     };
     this.pappRef = React.createRef();
   }
@@ -70,6 +72,19 @@ class PathFinderApp extends Component {
   componentDidMount(){
     nodeModelMatrix = constructNodePropArray();
     this.eventsBeingListenedFor();
+  }
+
+
+  setSubComponentHeights(totalHeight){
+    let mainAppHeight = (0.9) * totalHeight;
+    let topSecHeight = 0.05 * totalHeight;
+    let bottomSecHeigt = 0.05 * totalHeight;
+
+    return {
+      mainAppHeight : mainAppHeight,
+      topSectionHeight : topSecHeight,
+      bottomSectionHeight : bottomSecHeigt
+    };
   }
 
 
@@ -177,21 +192,21 @@ class PathFinderApp extends Component {
   render(){
     let propsToChildren = {
       numberOfTiles : NUMBER_OF_NODES,
-      h : HEIGHT,
-      w : WIDTH,
+      h : this.state.height_vars.mainAppHeight,
+      w : this.state.width_var,
       nodeType: this.state.type,
       parentRef: this.pappRef,
       limited : this.state.limitMet,
       modelMatrix : nodeModelMatrix
     };
-
+    
     return (
       <div className="App" id="pathApp" ref={this.pappRef}>
-        <div className="pathFinderTitle">
+        <div className="pathFinderTitle" style={{width:this.state.width_var,height:this.state.height_vars.topSectionHeight}}>
           Dijkstra Algorithm Simulator
         </div>
         <Grid {...propsToChildren}/>
-        <div className="controlButtonHolder">
+        <div className="controlButtonHolder" style={{width:this.state.width_var,height:this.state.height_vars.bottomSectionHeight}}>
           <DropDownMenu dropItems={BUTTON_ARRAY} parentRef={this.pappRef}/>
           <div className="controlButton" onClick={this.handleRunButtonClick}>Run</div>
           <div className="controlButton" onClick={this.handleClearButtonClick}>Clear</div>
