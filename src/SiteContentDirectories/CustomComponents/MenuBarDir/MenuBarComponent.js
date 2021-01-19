@@ -33,11 +33,14 @@ function MenuItem(props){
 }
 
 function MenuBar(){
+    let imageStyle = {
+        borderRadius : "50%",
+        maxHeight : "80%",
+        maxWidth: "80%"
+    }
+
     return(
         <div className="mainBar" id="mainBarId">
-            <div id="holdPic">
-                x
-            </div>
             <div id="holdName">Rizwan Chowdhury</div>
             <div id="holdMenuItems">
                 <MenuItem linkPath="/riz_site">

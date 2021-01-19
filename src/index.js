@@ -8,20 +8,29 @@ import {setSlideDimensions} from './SiteContentDirectories/Utilities/SetDimensio
 import whileScrolling from './SiteContentDirectories/Utilities/WhileScrolling';
 import ProjectsPage from './SiteContentDirectories/Projects/ProjectsPage/ProjectsPage';
 import MenuBar from './SiteContentDirectories/CustomComponents/MenuBarDir/MenuBarComponent';
+import ResumePage from './SiteContentDirectories/ResumePageContents/ResumePage';
 
 window.onresize = ()=>{
   setSlideDimensions();
+  
   let tabResizeEvent = new Event('tabresize');
   let projPageElem = document.getElementById('projectPageId');
-  projPageElem.dispatchEvent(tabResizeEvent);
+  if(projPageElem != null) projPageElem.dispatchEvent(tabResizeEvent);
+
+  let resumeTabResizeEvent = new Event('resumeTabResize');
+  let resumePageElem = document.getElementById('resumePageId');
+  if(resumePageElem != null) resumePageElem.dispatchEvent(resumeTabResizeEvent);
 };
-window.onscroll = whileScrolling;
+//window.onscroll = whileScrolling;
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <MenuBar/>
       <Switch>
+        <Route path="/riz_site/resume">
+          <ResumePage/>
+        </Route>
         <Route path="/riz_site/projects">
           <ProjectsPage/>
         </Route>

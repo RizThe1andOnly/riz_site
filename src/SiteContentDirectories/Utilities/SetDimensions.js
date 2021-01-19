@@ -4,7 +4,7 @@ const DIV_WIDTH_RATIO = 0.85;
 export function setSlideDimensions(){
     let divHeight = window.innerHeight * DIV_HEIGTH_RATIO;
     let divWidth = window.innerWidth * DIV_WIDTH_RATIO;
-    let leftMarginVal = (window.innerWidth - divWidth) * 0.25;
+    let leftMarginVal = (window.innerWidth - divWidth) * 0.5;
     let topMargin = (window.innerHeight - divHeight) * 0.5;
 
     let root = document.documentElement;

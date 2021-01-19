@@ -1,0 +1,4 @@
+.mainText{
+    display: flex;
+    flex-direction: column;
+}

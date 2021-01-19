@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import "./PresentationPageCss.css";
 import {addSuffix,PERCENT_SUFFIX,PIXEL_SUFFIX} from '../../Utilities/MiscUtilities';
-import {getProjectContents} from '../ProjectContent/PCExporter';
+import {getProjectContents,DEMO_TYPE_APP,DEMO_TYPE_VIDEO} from '../ProjectContent/PCExporter';
 
 
 //type definitions below. used with vs code editor for convenience.
@@ -12,6 +12,8 @@ import {getProjectContents} from '../ProjectContent/PCExporter';
  * @property {Text} title the title diplayed for the project
  * @property {Text} link link used by the react router to navigate to the presentation page for the app
  * @property {any} appDemo can be a react app component or a video that demos the app
+ * @property {Text} demoType type of demo, wheter a video or an acutal app. uses the PCExporter class constants which are available for import.
+ * @property {PUBLIC_URL} githubLink url to the github project repository
 */
 
 /**@typedef {Object} ParameterObject
@@ -48,6 +50,9 @@ class PresentationPage extends Component{
         let mainContainerTopMargin = (0.01 * window.innerHeight);
         let mainContainerLeftMargin = (0.075 * window.innerWidth);
 
+        //margin(s) for github link:
+        let githublinkLeftMargin = (0.3) * mainContainerWidth;
+        
         //dimensions title container:
         let titleContainerHeight = (0.05 * mainContainerHeight);
         let titleContainerWidth = 0.9 * mainContainerWidth;
@@ -86,6 +91,9 @@ class PresentationPage extends Component{
                 height_num : titleContainerHeight,
                 width_num : titleContainerWidth
             },
+            githubLinkComponent : {
+                alignSelf : "center"
+            },
             appDemoComponent : {
                 height : addSuffix(appDemoHeight,PIXEL_SUFFIX),
                 width : addSuffix(appDemoWidth,PIXEL_SUFFIX),
@@ -123,6 +131,7 @@ class PresentationPage extends Component{
                 <div className = "titleContainer" style={this.state.titleComponent}>
                     {toBePresented.title}
                 </div>
+                <a className = "githubLink" style={this.state.githubLinkComponent} href={toBePresented.githubLink} target="_blank" rel="noreferrer noopener">Github Link</a>
                 <div className="contentContainer">
                     <div className ="appDemoContainer" style={this.state.appDemoComponent}>
                         {toBePresented.appDemo}

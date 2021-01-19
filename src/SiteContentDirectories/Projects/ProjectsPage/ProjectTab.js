@@ -11,11 +11,16 @@ import {getTabContents} from '../ProjectContent/PCExporter';
 */
 
 const MARGIN_TOP_CONSTANT = 2;
+const HEIGHT_FACTOR = 0.2;
+const WIDTH_FACTOR = 0.5;
+let heightFactor_var = 0;
+let widthFactor_var = 0;
 
 class ProjectTab extends Component{
-
     constructor(props){
         super(props);
+        heightFactor_var = (props.heightFactor != null) ? (props.heightFactor) : HEIGHT_FACTOR;
+        widthFactor_var = (props.widthFactor != null) ? (props.widthFactor) : WIDTH_FACTOR;
         this.state = this.changeTabSize();
     }
 
@@ -32,8 +37,8 @@ class ProjectTab extends Component{
     changeTabSize(){
         let width_check = window.innerWidth;
 
-        let tabHeight = window.innerHeight * 0.2;
-        let tabWidth = window.innerWidth * 0.5;
+        let tabHeight = window.innerHeight * heightFactor_var;
+        let tabWidth = window.innerWidth * widthFactor_var;
         
         let tabHeight_withSuffix = tabHeight + "px";
         let tabWidth_withSuffix = tabWidth + "px";
@@ -67,11 +72,13 @@ class ProjectTab extends Component{
         /** @type TabContents */
         let tabContent = getTabContents(this.props.contentId);
 
+        let image = (tabContent.thumbnail == null) ? null : <img src={tabContent.thumbnail} alt="Not Found" width="100%" height="100%"/>;
+
         return(
             <Link to={tabContent.link} className="tabLink">
                 <div className="projectTab" style={sizeStyleFactors}>
                     <div className="imgHolder">
-                        <img src={tabContent.thumbnail} alt="Not Found" width="100%" height="100%"/>
+                        {image}
                     </div>
                     <div className="tabText">
                         <div className="tabTitle">{tabContent.title}</div>
