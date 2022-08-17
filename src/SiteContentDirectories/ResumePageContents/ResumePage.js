@@ -37,7 +37,6 @@ class ResumePage extends Component{
                             <span><strong>Below are a set of drop-down items each listing my different experiences/skills.</strong></span>
                         </div>
                         <ResumeSectionTab refWidth={this.state.width_var} title={InternshipContent.title} content={InternshipContent.content}/>
-                        <ResumeSectionTab refWidth={this.state.width_var} title={CourseContent.title} content={<ListView blurb={CourseContent.listBlurb} listItems={CourseContent.content} singleList={true}/>}/>
                         <ResumeSectionTab refWidth={this.state.width_var} title={SkillContent.title} content={<ListView blurb={SkillContent.listBlurb} listItems={SkillContent.content}/>}/>
                         <ResumeSectionTab refWidth={this.state.width_var} title={TechContent.title} content={<ListView blurb={TechContent.listBlurb} listItems={TechContent.content}/>}/>
                     </Route>

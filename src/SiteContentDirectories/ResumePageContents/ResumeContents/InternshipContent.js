@@ -1,20 +1,79 @@
 import React from 'react';
 
 let Internship = {
-    title : "Internship",
+    title : "Work Experience",
     content : 
         <div>
-            <h3>Rutgers Cyber Physical Systems Lab Android Application Development Intern</h3>
-            <p>A 5 month internship where the tast was to implement the Android version of DP4coRUna. DP4coRUna is an application that aids with pandemic by doing indoor localization (to determine users' exact location down to the room they are in) and make recommendations based on available data. Our implementation was built using <strong>Android Studio and Java</strong></p>
+            <h3>L3Harris Technologies - C5 Integrated Systems - Associate Software Engineer</h3>
+            <p>At L3Harris I have contributed to several projects and have obtained experince with a variety of technologies. My experiences involve the following:</p>
             <ul>
-                <li>I utilized <strong>Android Sensor/Network APIs and Google Maps APIs</strong> to find where the users are. Primarily this included initiating wifi-scans and obtaining wifi access point data. I also sampled light levels and geo-magnetic field strength for a particular location (room level). The Google Maps APIs were used for a map user interface and to determine a user's location down to the building location.</li> 
-                <li>I also used <strong>Android Handler, LiveBroadcast, and Thread</strong> libraries to work on the infrastructure for the application. To enable asynchronous and multi-threaded processes to take place.</li> 
-                <li>I used <strong>Android DialogFragment</strong> class to design some custom alert dialog interfaces (pop up messages with yes/no buttons) to take in user input and do process that data.</li>
-                <li> Worked with <strong>Amazon Web Services (AWS)</strong> tools to set up a <strong>EC2 server and RDS MySQL database</strong>. Then I set up a PHP script to enable our Android application to store or query data to/from the AWS database.</li>
-                <li>Installed some dependencies and Java external libraries using Maven and Gradle build files</li>
-                <li> The project followed some principles of <strong>Agile Development</strong>. We broke the tasks down based on specific required user modules and small sub-groups were assigned modules to work on. We presented progress on modules on a weekly basis.</li>
-                <li>Worked with a team of 4 people for the Android implementation and played a coordinator role. I talked with everyone else on the team and helped guide the discussion on who would do what for any particular week.</li>
-                <li>I gained experience coordinating with a team and keeping track of all the code through <strong>Slack and GitHub</strong>.</li>
+                
+                <li>
+                    Working on a <strong>Java Spring Boot</strong> web service. The application was designed with a <strong>micro service architecture</strong> which used <strong>REST APIs</strong> for 
+                    communications between services and with clients..
+                    <ul>
+                        <li>
+                            To investigate and resolve bugs I traced through code using IntelliJ debugger and put in log statements using Log4J.
+                        </li>
+                        <li>
+                            I did integration testing with the various services by launching them in a development environment. I utilized <strong>Docker Compose</strong> to launch
+                            each service, since each of them were <strong>Docker</strong> containers. The actual tests were run using <strong>Postman</strong>, where I set up each request and then
+                            wrote scripts to validate results.
+                        </li>
+                        <li>
+                            I used <strong>Jaeger Tracing</strong> to trace requuests across the different services for debugging purposes.
+                        </li>
+                        <li>
+                            I developed a feature to move data from one service to another utilizing REST endpoints and Java BufferedStreams.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    I was tasked with collecting network logs from a router, parsing those logs into metrics, and then presenting them in a meaningful way.
+                    <ul>
+                        <li>
+                            I used a combination of shell commands and Python's subprocess module to collect logs produced by the router. The router had a Linux
+                            OS so I was able to use Linux tools and aid in my work. The router reported logs which were obtained from the Linux "tc" tool. 
+                            I used Python's subprocess module to open an ssh connection to the router, then apply a "tail" command for the file with the logs 
+                            to extract the most recent logs.
+                        </li>
+
+                        <li>I used Python string operations and <strong>Regular Expressions</strong> to parse the logs into meaningful metrics for our project.</li>
+
+                        <li>For this project I used <strong>multi-threading with Python</strong> to manage retreiving and reporting metrics from several different sources.</li>
+
+                        <li>I used <strong>Python Socket Programming</strong> to open sockets to other components of the project to transfer metrics.</li>
+
+                        <li>Worked with <strong>Prometheus Database</strong> to store metrics and <strong>Grafana</strong> to display the metrics.</li>
+
+                        <li>I used the <strong>singleton design pattern</strong> to create a single instance object for access to data storage across the project. This object would be shared by the various parts of the projects that handled the processing of the metrics.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Extensive Hardware Software Integration (HSI) testing for an embedded system using the Python Unit Test framework.
+                    <ul>
+                        <li>
+                            I wrote scripts to initiate tests and validate the results. This invovled working with Python strings and byte arrays.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Do <strong>C/C++</strong> development for an embedded system.
+                    <ul>
+                        <li>
+                            I used the <strong>rule engine design pattern</strong> to cretate an Ip validator. Validation would involve checking Ip addresses or
+                            subnets to ensure they were not erroneous.
+                        </li>
+
+                        <li>
+                            Used <strong>Parasoft Unit Test Tool for C/C++</strong> to create and run unit test on modules I created and already existing modules. Since this was
+                            for an embedded system, testing also involved starting a QEMU instance setting up proper configurations to enable tests to run.
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
 };

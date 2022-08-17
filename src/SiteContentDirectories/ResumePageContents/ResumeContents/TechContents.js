@@ -1,14 +1,15 @@
 import React from 'react';
 
 let techlist = [
-    "Android Studio",
+    "IntelliJ",
     "Linux",
-    "Visual Studio",
     "VSCode",
-    "Amazon Web Services",
-    "PySpark",
     "PyTorch",
-    "NodeJS"
+    "NodeJS",
+    "Spring Boot",
+    "Python Unit Test",
+    "Parasoft Unit Test Tool (C/C++)",
+    "Docker"
 ]
 
 let techBlurb = "The following are platforms, IDEs, and libraries I have experience in.";

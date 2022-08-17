@@ -3,12 +3,12 @@ import React from 'react';
 let skillList = [
     "Java",
     "Python",
-    "Android App Development",
-    "JavaScript",
-    "HTML & CSS",
     "C/C++",
-    "C#",
-    "Git"
+    "JavaScript",
+    "Git",
+    "Debugging in VsCode, IntelliJ, & Eclipse",
+    "Unit Testing",
+    "Socket Programming"
 ]
 
 let skillBlurb = "Below are a list of programming languages and other skills I have experience in. I am most experienced with Java."
