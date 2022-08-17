@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import Grid from './View/GridSetup/Grid';
 import './PathFinderApp.css';
 import {constructNodePropArray,RunDijsktraAlgo} from './Model/DijkstraAlgo';
-import DropDownMenu from './View/DropDownComponentDir/DropDownMenu';
+import DropDownMenu from './View/DDCD/DropDownMenu';
 
 //constants and global variables:
 //constants:
