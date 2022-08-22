@@ -1,7 +1,7 @@
 {
   "main.css": "/riz_site/static/css/main.fa577417.chunk.css",
-  "main.js": "/riz_site/static/js/main.7af8488b.chunk.js",
-  "main.js.map": "/riz_site/static/js/main.7af8488b.chunk.js.map",
+  "main.js": "/riz_site/static/js/main.814eb28f.chunk.js",
+  "main.js.map": "/riz_site/static/js/main.814eb28f.chunk.js.map",
   "static/js/1.163e548b.chunk.js": "/riz_site/static/js/1.163e548b.chunk.js",
   "static/js/1.163e548b.chunk.js.map": "/riz_site/static/js/1.163e548b.chunk.js.map",
   "runtime~main.js": "/riz_site/static/js/runtime~main.873c3229.js",
@@ -10,6 +10,6 @@
   "static/media/ConwayGameOfLifeDemo.mp4": "/riz_site/static/media/ConwayGameOfLifeDemo.93a3eae4.mp4",
   "static/css/main.fa577417.chunk.css.map": "/riz_site/static/css/main.fa577417.chunk.css.map",
   "index.html": "/riz_site/index.html",
-  "precache-manifest.36941e903d29bb015139ca8f9bc1e730.js": "/riz_site/precache-manifest.36941e903d29bb015139ca8f9bc1e730.js",
+  "precache-manifest.0c584052714df179cf60acd141b6cc2d.js": "/riz_site/precache-manifest.0c584052714df179cf60acd141b6cc2d.js",
   "service-worker.js": "/riz_site/service-worker.js"
 }

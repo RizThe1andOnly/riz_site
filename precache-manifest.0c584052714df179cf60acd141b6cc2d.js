@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7af8488b9efe2217be2c",
+    "revision": "814eb28f08fd078c413a",
     "url": "/riz_site/static/css/main.fa577417.chunk.css"
   },
   {
-    "revision": "7af8488b9efe2217be2c",
-    "url": "/riz_site/static/js/main.7af8488b.chunk.js"
+    "revision": "814eb28f08fd078c413a",
+    "url": "/riz_site/static/js/main.814eb28f.chunk.js"
   },
   {
     "revision": "163e548bcc7130f1d04d",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/riz_site/static/media/ConwayGameOfLifeDemo.93a3eae4.mp4"
   },
   {
-    "revision": "36b8085c0172326c88a9c10b30f234a3",
+    "revision": "c8392eb72227dfc8cb312a11fd5487b3",
     "url": "/riz_site/index.html"
   }
 ];
