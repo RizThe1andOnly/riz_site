@@ -136,10 +136,10 @@ class ResumeSectionTab extends Component {
         }
 
         let titleDiv_style = {
-            width:"100%",
-            background: "gray",
-            display: "flex",
-            flexDirection: "row"
+            width          :"100%",
+            background     : "gray",
+            display        : "flex",
+            flexDirection  : "row"
         }
 
         let contentDiv_style = {
@@ -153,8 +153,8 @@ class ResumeSectionTab extends Component {
 
         let arrowContainerStyle = {
             flex : 0.1,
-            display : "felx",
-            felxDirection : "row",
+            display : "flex",
+            flexDirection : "row",
             alignItems : "flex-ends",
             position : "relative",
             paddingTop : "0%"
@@ -169,8 +169,7 @@ class ResumeSectionTab extends Component {
         }
 
         let titleTextStyle = {
-            flex : 0.9,
-            alignSelf : "center"
+            flex          : 0.9
         }
 
         return(
